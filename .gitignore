@@ -1,0 +1,36 @@
+# сначала все в игнор
+*
+
+#исключаем из игнора файлы
+!lpu2smo.pjt
+!lpu2smo.pjx
+!lpu2smo.exe
+
+#исключаем из игнора директории
+!FORMS
+!FORMS/*.prg
+!MENU
+!MENU/*.*
+!PROGRAM
+!PROGRAM/*.prg
+
+#/!Used
+#/BARCODES.FONTS
+#/BITMAPS
+#/BITS.NEW
+#/DesktopAlerts
+#/FOXCHARTS
+#/GRAPHICS
+#/icon
+#/INCLUDE
+#/koeff
+#/mscomm32
+#/Parallel
+#/PROGRAM/*.fxp
+#/PROGRAM/*.bak
+#/QRCODE.FONTS
+#/REPORTS
+#/Security
+#/WorkbookXLSX
+#/xbase64
+
