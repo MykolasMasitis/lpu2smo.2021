@@ -2,17 +2,18 @@
 *
 
 #исключаем из игнора файлы
-!lpu2smo.pjt
+!.gitignore
+!lpu2smo.PJT
 !lpu2smo.pjx
 !lpu2smo.exe
 
 #исключаем из игнора директории
-!FORMS
-!FORMS/*.prg
-!MENU
-!MENU/*.*
-!PROGRAM
-!PROGRAM/*.prg
+!/FORMS
+!/FORMS/*.???
+!/MENU
+!/MENU/*.???
+!/PROGRAM
+!/PROGRAM/*.prg
 
 #/!Used
 #/BARCODES.FONTS

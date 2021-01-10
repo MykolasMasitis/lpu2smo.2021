@@ -3835,8 +3835,8 @@ PROCEDURE ss_flk
      m.d_ser2 = IIF(FIELD('d_ser2', 'doctor')=UPPER('d_ser2'), IIF(!EMPTY(doctor.d_ser2), doctor.d_ser2, {01.01.0001}), {01.01.0001})
     ENDIF 
     IF !EMPTY(m.d_ser)
-     *IF (m.d_u-m.d_ser > 365.25*5 AND m.d_ser+365.25*5<{15.03.2020}) AND (m.d_u-m.d_ser2>365.25*5 AND m.d_ser2+365.25*5<{15.03.2020})
-     IF (m.d_u-m.d_ser > 365.25*5) AND (m.d_u-m.d_ser2>365.25*5)
+     IF (m.d_u-m.d_ser > 365.25*5 AND m.d_ser+365.25*5<{15.03.2020}) AND (m.d_u-m.d_ser2>365.25*5 AND m.d_ser2+365.25*5<{15.03.2020})
+     *IF (m.d_u-m.d_ser > 365.25*5) AND (m.d_u-m.d_ser2>365.25*5)
       m.recid = recid
       rval = InsError('S', 'VDA', m.recid, '',;
       	'Сертификат специалиста выдан более пяти лет назад ('+DTOC(m.d_ser)+')')
